@@ -1,0 +1,48 @@
+input,
+textarea,
+.options {
+    background-color: var(--input-base);
+    color: var(--input-placeholder);
+    appearance: none;
+    width: 100%;
+    max-height: 3rem;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    outline: 1px solid var(--input-stroke);
+    padding: 1rem;
+    font: var(--text-md);
+
+
+}
+
+textarea {
+    max-height: 8rem;
+    resize: vertical;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.75rem;
+    font: var(--text-sm);
+    color: var(--text-body);
+}
+
+input {
+
+    &:invalid {
+        border: 0.125rem solid var(--danger);
+    }
+
+
+    &[required] + .error {
+        display: flex;
+        align-items: center;
+        gap: 0.25rem;
+
+        font: var(--text-sm);
+        color: var(--danger);
+        margin-top: 0.5rem;
+    }
+
+}
+

@@ -1,0 +1,65 @@
+#app {
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: 34% 66%;
+
+    margin: auto;
+    height: 100vh;
+    overflow: hidden;
+}
+
+main {
+    background-color: var(--shape-body);
+    max-width: 51.25rem;
+    overflow: auto;
+    margin-top: 1.25rem;
+    border-radius: 12px;
+
+    & .main-container {
+        padding: 5rem 8.125rem;
+    }
+
+}
+
+aside {
+    max-width: 440px;
+    margin: 1.25rem;
+    position: relative;
+
+    & .logo-container {
+        position: absolute;
+        z-index: 999999;
+        padding: 2rem;
+        /*left: 2rem;*/
+        & .logo {
+            width: 3rem;
+        }
+
+        & > h1 {
+            margin-top: 1rem;
+            font: var(--logo);
+            color: var(--pink);
+        }
+
+        & > span {
+            margin-top: 0.25rem;
+            font: var(--text-md);
+            color: var(--text-heading);
+        }
+    }
+
+
+    & .aside-container {
+        height: auto;
+
+        & > img {
+            border-radius: 12px;
+            position: absolute;
+        }
+    }
+}
+
+.contact {
+    padding-bottom: 3rem;
+    border-bottom: 2px solid var(--input-stroke) ;
+}

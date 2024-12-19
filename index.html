@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/index.css">
+
+    <title>Formulário de convite</title>
+</head>
+<body>
+
+    <div id="app">
+        <aside>
+            <div class="logo-container">
+                <img class="logo" src="assets/Logo.svg" alt="">
+                <h1>Festivite</h1>
+                <span>Crie um convite digital para o seu evento</span>
+            </div>
+            <div class="aside-container">
+                <img src="assets/Background.png" alt="">
+            </div>
+        </aside>
+
+
+        <main>
+            <div class="main-container">
+                <h1>Crie seu convite</h1>
+                <form method="post" enctype="multipart/form-data">
+                    <fieldset class="info">
+                        <legend><img src="assets/icons/calendar.svg" alt="">Sobre o evento</legend>
+
+                        <div class="input-wrapper">
+                            <div>
+                                <label for="nameEvent">Título</label>
+                                <input id="nameEvent" name="nameEvent" type="text" placeholder="Nome do evento"/>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <div>
+                                <label for="initial">Início</label>
+                                <input type="text" name="initial" id="initial" placeholder="DD/MM/AAAA, --:--"
+                                       lang="pt-BR"/>
+                            </div>
+                            <div>
+                                <label for="end">Fim</label>
+                                <input type="text" name="end" id="end" placeholder="DD/MM/AAAA, --:--" lang="pt-BR"/>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <div class="checkbox-wrapper flex column">
+                                <label for="type">Tipo</label>
+                                <input type="checkbox" name="type" id="type"/>
+                                <label class="options" for="type">
+                                    <div class="option presencial">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_4119_206)">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                      d="M5.33337 1.83331C5.11236 1.83331 4.9004 1.92111 4.74412 2.07739C4.58784 2.23367 4.50004 2.44563 4.50004 2.66665V14.1666H11.5V2.66665C11.5 2.44563 11.4122 2.23367 11.256 2.07739C11.0997 1.92111 10.8877 1.83331 10.6667 1.83331H5.33337ZM12.5 5.49998V2.66665C12.5 2.18042 12.3069 1.7141 11.9631 1.37028C11.6193 1.02647 11.1529 0.833313 10.6667 0.833313H5.33337C4.84714 0.833313 4.38083 1.02647 4.03701 1.37028C3.69319 1.7141 3.50004 2.18042 3.50004 2.66665V7.49998H2.66671C2.18048 7.49998 1.71416 7.69313 1.37034 8.03695C1.02653 8.38077 0.833374 8.84708 0.833374 9.33331V13.3333C0.833374 13.8195 1.02653 14.2859 1.37034 14.6297C1.71416 14.9735 2.18048 15.1666 2.66671 15.1666H13.3334C13.8196 15.1666 14.2859 14.9735 14.6297 14.6297C14.9736 14.2859 15.1667 13.8195 15.1667 13.3333V7.33331C15.1667 6.84708 14.9736 6.38077 14.6297 6.03695C14.2859 5.69313 13.8196 5.49998 13.3334 5.49998H12.5ZM12.5 6.49998V14.1666H13.3334C13.5544 14.1666 13.7663 14.0788 13.9226 13.9226C14.0789 13.7663 14.1667 13.5543 14.1667 13.3333V7.33331C14.1667 7.1123 14.0789 6.90034 13.9226 6.74406C13.7663 6.58778 13.5544 6.49998 13.3334 6.49998H12.5ZM3.50004 8.49998H2.66671C2.44569 8.49998 2.23373 8.58778 2.07745 8.74406C1.92117 8.90034 1.83337 9.1123 1.83337 9.33331V13.3333C1.83337 13.5543 1.92117 13.7663 2.07745 13.9226C2.23373 14.0788 2.44569 14.1666 2.66671 14.1666H3.50004V8.49998ZM6.16671 3.99998C6.16671 3.72384 6.39056 3.49998 6.66671 3.49998H9.33337C9.60952 3.49998 9.83337 3.72384 9.83337 3.99998C9.83337 4.27612 9.60952 4.49998 9.33337 4.49998H6.66671C6.39056 4.49998 6.16671 4.27612 6.16671 3.99998ZM6.16671 6.66665C6.16671 6.3905 6.39056 6.16665 6.66671 6.16665H9.33337C9.60952 6.16665 9.83337 6.3905 9.83337 6.66665C9.83337 6.94279 9.60952 7.16665 9.33337 7.16665H6.66671C6.39056 7.16665 6.16671 6.94279 6.16671 6.66665ZM6.16671 9.33331C6.16671 9.05717 6.39056 8.83331 6.66671 8.83331H9.33337C9.60952 8.83331 9.83337 9.05717 9.83337 9.33331C9.83337 9.60945 9.60952 9.83331 9.33337 9.83331H6.66671C6.39056 9.83331 6.16671 9.60945 6.16671 9.33331ZM6.16671 12C6.16671 11.7238 6.39056 11.5 6.66671 11.5H9.33337C9.60952 11.5 9.83337 11.7238 9.83337 12C9.83337 12.2761 9.60952 12.5 9.33337 12.5H6.66671C6.39056 12.5 6.16671 12.2761 6.16671 12Z"
+                                                      fill="#869198"/>
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_4119_206">
+                                                    <rect width="16" height="16" fill="white"/>
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+
+                                        <span>Presencial</span>
+                                    </div>
+                                    <div class="option online">
+                                        <svg width="16" height="16" viewBox="0 0 32 32" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33329 9C4.41282 9 3.66663 9.74619 3.66663 10.6667V21.3333C3.66663 22.2538 4.41282 23 5.33329 23H18.6666C19.5871 23 20.3333 22.2538 20.3333 21.3333V17.347C20.3332 17.3373 20.3332 17.3276 20.3333 17.3178V14.019C20.3331 14.0069 20.3331 13.9949 20.3333 13.9829V10.6667C20.3333 9.74619 19.5871 9 18.6666 9H5.33329ZM22.3333 12.2588V10.6667C22.3333 8.64162 20.6917 7 18.6666 7H5.33329C3.30825 7 1.66663 8.64162 1.66663 10.6667V21.3333C1.66663 23.3584 3.30825 25 5.33329 25H18.6666C20.6917 25 22.3333 23.3584 22.3333 21.3333V19.2019L27.7433 22.8085C27.9943 22.9755 28.2859 23.0713 28.587 23.0858C28.8881 23.1002 29.1875 23.0326 29.4533 22.8903C29.7191 22.748 29.9413 22.5363 30.0962 22.2777C30.2512 22.0191 30.3331 21.7233 30.3333 21.4219V10.4936C30.3333 10.4935 30.3333 10.4937 30.3333 10.4936C30.3333 10.2005 30.256 9.9122 30.1092 9.65845C29.9624 9.40462 29.7511 9.19404 29.4968 9.04796C29.2425 8.90188 28.9542 8.82548 28.661 8.82648C28.3677 8.82747 28.0799 8.90583 27.8266 9.05363L22.3333 12.2588ZM22.3333 14.5743V16.7982L28.3333 20.7982V11.0735L22.3333 14.5743Z"
+                                                  fill-rule="evenodd" clip-rule="evenodd" fill="#869198"/>
+                                        </svg>
+                                        <span>Online</span></div>
+                                </label>
+                            </div>
+
+                            <div>
+                                <label for="locale">Local</label>
+                                <input type="text" name="locale" id="locale" placeholder="Link ou endereço"/>
+                            </div>
+                        </div>
+
+
+                        <div class="textarea-wrapper">
+                            <label for="medical-info">Descrição</label>
+                            <textarea name="medical-info" id="medical-info"
+                                      cols="30" rows="5"
+                                      placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset class="custom">
+                        <legend><img src="assets/icons/paintbrush-vertical.svg" alt="">Personalização</legend>
+
+                        <div class="input-wrapper column">
+                            <label>Cor principal</label>
+                            <div class="radio-wrapper">
+                                <div class="radio-inner">
+                                    <input class="brand-light" type="radio" name="color" id="brand-light">
+                                    <label for="brand-light"></label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input class="navy" type="radio" name="color" id="navy">
+                                    <label for="navy"></label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input class="purple" type="radio" name="color" id="purple">
+                                    <label for="purple"></label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input class="fuschia" type="radio" name="color" id="fuschia">
+                                    <label for="fuschia"></label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input class="pink" type="radio" name="color" id="pink">
+                                    <label for="pink"></label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input class="danger" type="radio" name="color" id="danger">
+                                    <label for="danger"></label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input class="orange" type="radio" name="color" id="orange">
+                                    <label for="orange"></label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input class="yellow" type="radio" name="color" id="yellow">
+                                    <label for="yellow"></label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input class="lime" type="radio" name="color" id="lime">
+                                    <label for="lime"></label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input class="green" type="radio" name="color" id="green">
+                                    <label for="green"></label>
+                                </div>
+
+                                <div class="radio-inner">
+                                    <input class="cyan" type="radio" name="color" id="cyan">
+                                    <label for="cyan"></label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper column">
+                            <label>Tema do evento</label>
+                            <div class="theme-wrapper">
+                                <div class="radio-inner theme">
+                                    <img src="assets/images/birthday.jpg" alt="ícone de futebol">
+                                    <input type="radio" name="theme" id="birthday">
+                                    <label for="birthday">Aniversário</label>
+                                </div>
+
+                                <div class="radio-inner theme">
+                                    <img src="assets/images/Infantil.jpg" alt="ícone de futebol">
+                                    <input type="radio" name="theme" id="children">
+                                    <label for="children">Infantil</label>
+                                </div>
+
+                                <div class="radio-inner theme">
+                                    <img src="assets/images/vasily-koloda-8CqDvPuo_kI-unsplash.jpg"
+                                         alt="ícone de futebol">
+                                    <input type="radio" name="theme" id="Graduation">
+                                    <label for="Graduation">Formatura</label>
+                                </div>
+
+                                <div class="radio-inner theme">
+                                    <img src="assets/images/birthday.jpg" alt="ícone de futebol">
+                                    <input type="radio" name="theme" id="wedding">
+                                    <label for="wedding">Casamento</label>
+                                </div>
+
+                                <div class="radio-inner theme">
+                                    <img src="assets/images/birthday.jpg" alt="ícone de futebol">
+                                    <input type="radio" name="theme" id="baby-shower">
+                                    <label for="baby-shower">Chá de bebê</label>
+                                </div>
+
+                                <div class="radio-inner theme">
+                                    <img src="assets/images/birthday.jpg" alt="ícone de futebol">
+                                    <input type="radio" name="theme" id="bridal-shower">
+                                    <label for="bridal-shower">Chá de panela</label>
+                                </div>
+
+                                <div class="radio-inner theme">
+                                    <img src="assets/images/birthday.jpg" alt="ícone de futebol">
+                                    <input type="radio" name="theme" id="Carnival">
+                                    <label for="Carnival">Carnaval</label>
+                                </div>
+
+                                <div class="radio-inner theme">
+                                    <img src="assets/images/birthday.jpg" alt="ícone de futebol">
+                                    <input type="radio" name="theme" id="Easter">
+                                    <label for="Easter">Páscoa</label>
+                                </div>
+
+                                <div class="radio-inner theme">
+                                    <img src="assets/images/birthday.jpg" alt="ícone de futebol">
+                                    <input type="radio" name="theme" id="Saint John">
+                                    <label for="Saint John">São João</label>
+                                </div>
+
+                                <div class="radio-inner theme">
+                                    <img src="assets/images/birthday.jpg" alt="ícone de futebol">
+                                    <input type="radio" name="theme" id="Halloween">
+                                    <label for="Halloween">Halloween</label>
+                                </div>
+
+                                <div class="radio-inner theme">
+                                    <img src="assets/images/birthday.jpg" alt="ícone de futebol">
+                                    <input type="radio" name="theme" id="Natal">
+                                    <label for="Natal">Natal</label>
+                                </div>
+
+                                <div class="radio-inner theme">
+                                    <img src="assets/images/birthday.jpg" alt="ícone de futebol">
+                                    <input type="radio" name="theme" id="Outro">
+                                    <label for="Outro">Outro</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <div class="checkbox-wrapper style-w flex column">
+                                <label for="type">Estilo</label>
+                                <input type="checkbox" name="type" id="style"/>
+                                <div class="input-style">
+                                    <label class="switch" for="style">
+
+                                    </label>
+                                    <div class="dark">
+                                        Escuro
+                                    </div>
+                                    <div class="light">
+                                        Claro
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="file-wrapper">
+                                <label for="locale">Foto de capa</label>
+                                <div class="flex">
+                                    <div class="dropzone">
+                                        <input type="file" id="birth-file" name="birth-file">
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                  d="M7.64645 1.64645C7.84171 1.45118 8.15829 1.45118 8.35355 1.64645L11.6869 4.97978C11.8821 5.17504 11.8821 5.49162 11.6869 5.68689C11.4916 5.88215 11.175 5.88215 10.9798 5.68689L8.5 3.20711V10C8.5 10.2761 8.27614 10.5 8 10.5C7.72386 10.5 7.5 10.2761 7.5 10V3.20711L5.02022 5.68689C4.82496 5.88215 4.50838 5.88215 4.31311 5.68689C4.11785 5.49162 4.11785 5.17504 4.31311 4.97978L7.64645 1.64645ZM2 9.5C2.27614 9.5 2.5 9.72386 2.5 10V12.6667C2.5 12.8877 2.5878 13.0996 2.74408 13.2559C2.90036 13.4122 3.11232 13.5 3.33333 13.5H12.6667C12.8877 13.5 13.0996 13.4122 13.2559 13.2559C13.4122 13.0996 13.5 12.8877 13.5 12.6667V10C13.5 9.72386 13.7239 9.5 14 9.5C14.2761 9.5 14.5 9.72386 14.5 10V12.6667C14.5 13.1529 14.3068 13.6192 13.963 13.963C13.6192 14.3068 13.1529 14.5 12.6667 14.5H3.33333C2.8471 14.5 2.38079 14.3068 2.03697 13.963C1.69315 13.6192 1.5 13.1529 1.5 12.6667V10C1.5 9.72386 1.72386 9.5 2 9.5Z"
+                                                  fill="#59B2FF"/>
+                                        </svg>
+
+
+                                        <p>Selecionar</p>
+                                    </div>
+                                    <p>Nenhum arquivo selecionado</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <fieldset class="contact">
+                        <legend><img src="assets/icons/contact.svg" alt="">Dados para contato</legend>
+
+                        <div class="input-wrapper">
+                            <div>
+                                <label for="fullname">Nome</label>
+                                <input id="fullname" name="fulllname" type="text" placeholder="Nome completo" required/>
+                                <div class="error">
+                                    <img src="assets/icons/alert-circle.svg" alt="ícone de alerta vermelho">
+                                    <span>Insira um e-mail válido</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input type="text" name="email" id="email" placeholder="exemplo@email.com"/>
+                            </div>
+                            <div>
+                                <label for="phone">Telefone</label>
+                                <input type="text" name="phone" id="phone" placeholder="(99) 99999-9999"/>
+                            </div>
+                        </div>
+
+                    </fieldset>
+
+                    <div class="checkbox-terms-wrapper">
+                        <div class="terms-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms" id="terms1">
+                            <label for="terms1">Li e concordo com os <strong>Termos e Condições</strong> e
+                                com a <strong>Política de
+                                    Privacidade</strong> </label>
+                        </div>
+
+                        <div class="terms-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms" id="terms2">
+                            <label for="terms2">Aceito receber atualizações e promoções por e-mail</label>
+                        </div>
+
+                        <div class="terms-wrapper">
+                            <div class="checkbox-image"></div>
+                            <input type="checkbox" name="terms" id="terms3">
+                            <label for="terms3">Aceito receber atualizações e promoções por SMS</label>
+
+                        </div>
+                    </div>
+
+                    <div class="actions-wrapper">
+                        <button class="btn-primary" type="submit">
+                            <img class="logo" src="assets/icons/ticket.svg" alt="">
+                            Gerar convite
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+        </main>
+    </div>
+
+
+</body>
+</html>
